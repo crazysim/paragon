@@ -1,14 +1,6 @@
-require 'isaac'
+$: << 'lib'
 
-configure do |c|
-  c.nick   = 'paragon'
-  c.server = 'localhost'
-end
+require 'eventmachine'
+require 'paragon/bot'
 
-on :connect do
-  join '#derp'
-end
-
-on :channel do
-  msg channel, %[Really? "#{message}"?]
-end
+EventMachine.run { Paragon::Bot.new.start }
