@@ -1,7 +1,7 @@
 Paragon
 =======
 
-The SmartReceipt IRC bot (_paragon_ is the Polish word for receipt).
+The SmartReceipt IRC bot (paragon is the Polish word for receipt).
 
 License
 -------
