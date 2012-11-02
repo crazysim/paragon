@@ -24,11 +24,6 @@ module Paragon
       @@context
     end
 
-    def derp
-      require 'logger'
-      Logger.new($stdout).warn :DERP
-    end
-
     private
 
     def load_plugins
