@@ -1,6 +1,5 @@
 $: << 'lib'
 
-require 'eventmachine'
 require 'paragon/chat_bot'
 require 'paragon/web_server'
 

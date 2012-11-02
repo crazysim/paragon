@@ -77,7 +77,6 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
-  eventmachine
   isaac
   sinatra
   standalone_migrations
