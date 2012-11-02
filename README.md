@@ -22,6 +22,13 @@ your environment. Next, use Rails-style rake tasks to migrate it.
 rake db:migrate
 ```
 
+Running it
+----------
+
+```sh
+rackup
+```
+
 License
 -------
 
