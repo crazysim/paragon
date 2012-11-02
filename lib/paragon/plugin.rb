@@ -3,6 +3,7 @@ require 'paragon/config'
 
 module Paragon
   class Plugin
+    include Paragon::Config
 
     def self.descendants
       ObjectSpace.each_object(Class).select { |klass| klass < self }
