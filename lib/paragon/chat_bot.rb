@@ -6,6 +6,7 @@ module Paragon
     include Paragon::Config
 
     def initialize
+      save_context
       super
       configure do |c|
         c.nick   = paragon_config.nick   || 'paragon'
@@ -27,7 +28,6 @@ module Paragon
     private
 
     def load_plugins
-      save_context
       Dir['./plugins/*.rb'].each { |plugin| require plugin }
     end
 
